@@ -1,16 +1,16 @@
-EPOCHS: 1
+EPOCHS: 2
 FACTOR: 0.3
 FREEZE_ALL: true
-LOSS_FUNC: sparse_categorical_crossentropy
-MODEL_NAME: ResNet50
-MODEL_OBJ: ResNet50
+LOSS_FUNC: RMSProp
+MODEL_NAME: ResNet101
+MODEL_OBJ: ResNet101
 MONITOR: val_loss
 OPTIMIZER: Adam
 PATIENCE: 5
 SCHEDULER: true
 TENSORBOARD: true
 augmentation: true
-batch_size: 32
+batch_size: 16
 dimension: 224,224,3
 train_dir: E:\Computer Vision\flower recognition\flower recognition\train
 val_dir: E:\Computer Vision\flower recognition\flower recognition\validation
